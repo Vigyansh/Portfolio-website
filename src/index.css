@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  /* Midnight Blue, Soft Lavender, and White Color Theme */
+  --background: 0 0% 100%; /* White */
+  --foreground: 222 47% 18%; /* Midnight Blue Text */
+
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 18%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 18%;
+
+  --primary: 222 47% 22%; /* Midnight Blue */
+  --primary-foreground: 0 0% 100%; /* White */
+
+  --secondary: 260 67% 88%; /* Soft Lavender */
+  --secondary-foreground: 222 47% 18%;
+
+  --muted: 260 35% 95%;
+  --muted-foreground: 222 20% 40%;
+
+  --accent: 260 67% 88%; /* Soft Lavender */
+  --accent-foreground: 222 47% 18%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 220 20% 90%;
+  --input: 220 20% 90%;
+  --ring: 222 47% 22%;
+
+  --radius: 0.5rem;
+
+  --chart-1: 222 47% 22%; /* Midnight Blue */
+  --chart-2: 260 67% 88%; /* Soft Lavender */
+  --chart-3: 245 55% 55%; /* Medium Purple */
+  --chart-4: 235 65% 65%; /* Light Blue */
+  --chart-5: 280 60% 50%; /* Purple */
+}
+
+.dark {
+  --background: 222 47% 10%; /* Dark Midnight Blue */
+  --foreground: 260 20% 95%; /* Light Lavender */
+
+  --card: 222 47% 12%;
+  --card-foreground: 260 20% 95%;
+
+  --popover: 222 47% 12%;
+  --popover-foreground: 260 20% 95%;
+
+  --primary: 260 67% 75%; /* Soft Lavender */
+  --primary-foreground: 222 47% 10%;
+
+  --secondary: 222 47% 25%; /* Midnight Blue */
+  --secondary-foreground: 260 20% 95%;
+
+  --muted: 222 47% 20%;
+  --muted-foreground: 260 20% 75%;
+
+  --accent: 222 47% 30%;
+  --accent-foreground: 260 20% 95%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 222 47% 30%;
+  --input: 222 47% 30%;
+  --ring: 260 67% 75%;
+
+  --chart-1: 260 67% 75%; /* Soft Lavender */
+  --chart-2: 222 47% 35%; /* Light Midnight Blue */
+  --chart-3: 245 55% 55%; /* Medium Purple */
+  --chart-4: 235 65% 65%; /* Light Blue */
+  --chart-5: 280 60% 50%; /* Purple */
+}
+
+/* Custom animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Sections styling */
+.section-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+}
+
+.highlight {
+  @apply text-primary dark:text-primary font-semibold;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-500;
+}
