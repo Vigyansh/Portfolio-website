@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+💼 Portfolio Website
+A personal portfolio website to showcase my skills, projects, and professional background. Built with a modern tech stack, it highlights my expertise in front-end development, user-centric design, and interactive web technologies.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tech Stack
+🟦 React
 
-Currently, two official plugins are available:
+⚡ Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+💅 Tailwind CSS
 
-## Expanding the ESLint configuration
+🔐 TypeScript
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+🧹 ESLint
 
-- Configure the top-level `parserOptions` property like this:
+🎨 Prettier
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+🌐 React Router DOM
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+📦 Getting Started
+To run the project locally, follow these simple steps:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone the Repository
+git clone https://github.com/Vigyansh/portfolio-website.git
+cd your-portfolio
+2. Install Dependencies
+npm install
+3. Start Development Server
+npm run dev
+Visit http://localhost:5173 to view the site in your browser.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+📁 Folder Structure
+├── public/           # Static files
+├── src/
+│   ├── assets/       # Images, icons, and other assets
+│   ├── components/   # Reusable UI components
+│   ├── pages/        # Main pages like Home, About, Projects
+│   ├── data/         # JSON/data files for dynamic content
+│   ├── App.tsx       # Main app file
+│   └── main.tsx      # Entry point
+├── tailwind.config.js
+├── index.html
+└── package.json
+
+📌 Features
+⚙️ Fully responsive layout
+
+🌙 Light/Dark mode toggle
+
+🧠 Dynamic project listing
+
+🌍 SEO-optimized metadata
+
+📱 Mobile-first design
+
+💬 Contact form (optional integration with EmailJS or Netlify Forms)
+
+🧑‍💻 Author
+Vigyansh Chugh
+📧 cvigyansh@gmail.com
+🔗 LinkedIn: [www.linkedin.com/in/vigyansh-chugh-934aa29b]
+🔗 GitHub: [https://github.com/Vigyansh]
+
+📜 License
+This project is licensed under the MIT License. See the LICENSE file for details.
