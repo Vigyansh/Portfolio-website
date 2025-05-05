@@ -56,7 +56,7 @@ const Navbar = () => {
           <div className="flex-shrink-0 font-bold text-xl text-primary dark:text-primary">
             <a href="#home" className="flex items-center gap-2">
               <img
-                src="/public/images/og-image2.png"
+                src="/images/og-image2.png"
                 alt="Vigyansh Chugh"
                 className="w-32 h-16 py-1 object-cover rounded-br-2xl rounded-tl-2xl"
               />

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
           <img
-                src="/public/images/og-image2.png"
+                src="/images/og-image2.png"
                 alt="Vigyansh Chugh"
                 className="w-44 h-20 rounded-br-2xl rounded-tl-2xl py-1 object-cover"
               />

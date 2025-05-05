@@ -77,7 +77,7 @@ const HeroSection = () => {
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary dark:border-primary animate-float">
               <img
-                src="/public/images/VC.png"
+                src="/images/VC.png"
                 alt="Vigyansh Chugh"
                 className="w-full h-full object-cover"
               />

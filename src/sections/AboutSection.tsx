@@ -19,7 +19,7 @@ const AboutSection = () => {
           >
             <div className="relative rounded-lg overflow-hidden shadow-xl">
               <img
-                src="/public/images/about.webp"
+                src="/images/about.webp"
                 alt="Vigyansh Chugh"
                 className="w-full h-auto"
               />
