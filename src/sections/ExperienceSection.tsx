@@ -101,7 +101,7 @@ const ExperienceSection = () => {
           transition={{ duration: 0.5 }}
         >
           <a
-            href="/public/VigyanshChugh_FrontEnd_Developer_Resume.pdf"
+            href="/VigyanshChugh_FrontEnd_Developer_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-medium transition-colors inline-flex items-center"
