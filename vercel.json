@@ -6,6 +6,10 @@
       "config": {
         "distDir": "dist"
       }
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
     }
   ]
 }
